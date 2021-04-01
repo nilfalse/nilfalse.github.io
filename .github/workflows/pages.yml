@@ -12,16 +12,16 @@ jobs:
       - name: 🛎️ Checkout
         uses: actions/checkout@v1
 
-      - name: Setup Node
+      - name: ⬢ Setup Node
         uses: actions/setup-node@v2.1.2
         with:
           node-version: "14.x"
 
-      - name: Get yarn cache
+      - name: 🧶 Get yarn cache
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Cache dependencies
+      - name: ✨ Cache dependencies
         uses: actions/cache@v2
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
@@ -30,7 +30,9 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: 🔧 Build
-        run: make
+        run: make --jobs --output-sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
