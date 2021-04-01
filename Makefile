@@ -14,4 +14,4 @@ pages/home/build :
 
 .PHONY : clean
 clean :
-	-rm -rf pages/home/build
+	-rm -rf www pages/home/build
