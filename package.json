@@ -1,0 +1,15 @@
+{
+  "private": "true",
+  "name": "nilfalse.github.io",
+  "version": "0.0.0",
+  "homepage": "https://nilfalse.github.io/",
+  "devDependencies": {
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+    "source": "www",
+    "include": [
+      "/addons/ctf/"
+    ]
+  }
+}
