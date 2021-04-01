@@ -10,7 +10,7 @@ www : pages/home/build
 	cp -r pages/home/build/* www/
 
 pages/home/build :
-	cd pages/home && yarn && yarn build
+	cd pages/home && yarn --frozen-lockfile && yarn build
 
 .PHONY : clean
 clean :
