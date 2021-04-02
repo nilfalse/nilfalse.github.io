@@ -11,5 +11,8 @@
     "include": [
       "/addons/ctf/"
     ]
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }

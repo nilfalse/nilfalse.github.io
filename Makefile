@@ -1,5 +1,4 @@
 .PHONY : all
-
 all : www
 
 serve : www
@@ -11,6 +10,7 @@ www : node_modules pages/home/build pages/addons/ctf
 	- mkdir -p $@/addons
 	cp -r pages/addons/ctf/packages/landing/build $@/addons/ctf
 	yarn react-snap
+	- rm $@/200.html
 
 pages/home/build :
 	cd pages/home && yarn --frozen-lockfile && yarn build
