@@ -1,0 +1,29 @@
+.rainbow {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    #61dafb,
+    yellow,
+    orange,
+    #da2d76
+  );
+  background-size: 800% 800%;
+  animation: rainbow 8s ease infinite;
+}
+
+.rainbow_text {
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

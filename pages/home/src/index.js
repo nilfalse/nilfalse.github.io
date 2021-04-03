@@ -5,6 +5,7 @@ import { App } from './app';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
+import './rainbow.css';
 
 const rootElement = document.getElementById('react-root');
 
