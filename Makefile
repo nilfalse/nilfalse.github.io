@@ -1,16 +1,21 @@
+ALL = www postprocess
+
 .PHONY : all
-all : www
+all : $(ALL)
 
 serve : www
 	cd www && python3 -m http.server
 
-www : node_modules pages/home/build pages/addons/ctf
-	- mkdir -p $@
-	cp -r pages/home/build/* www/
-	- mkdir -p $@/addons
-	cp -r pages/addons/ctf/packages/landing/build $@/addons/ctf
+.PHONY : postprocess
+postprocess : www
 	yarn react-snap
-	- rm $@/200.html
+	- rm $^/200.html
+	find www -path '*.htm' -o -path '*.html' -exec node scripts/postprocess.js {} +
+
+www : node_modules pages/home/build pages/addons/ctf
+	mkdir -p $@/addons
+	cp -r pages/home/build/* www/
+	cp -r pages/addons/ctf/packages/landing/build $@/addons/ctf
 
 pages/home/build :
 	cd pages/home && yarn --frozen-lockfile && yarn build
@@ -24,6 +29,8 @@ pages/addons/ctf :
 node_modules :
 	yarn --frozen-lockfile
 
-.PHONY : clean
+.PHONY : clean distclean
 clean :
-	-rm -rf node_modules www pages/home/build pages/home/node_modules pages/addons/ctf
+	-rm -rf www pages/home/build
+distclean : clean
+	-rm -rf node_modules pages/home/node_modules pages/addons

@@ -30,7 +30,7 @@ export function App() {
               </header>
 
               <a href="/addons/ctf/" className="addon__link_hidden">
-                Capture The Flag
+                Capture&nbsp;The&nbsp;Flag
               </a>
 
               <img src={ctfLogo} alt="CTF Logo" width="180px" height="180px" />
