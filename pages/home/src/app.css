@@ -9,10 +9,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2.6rem;
   color: white;
 }
 
 .App-hello {
   color: #61dafb;
+}
+
+.App-hello-rainbow {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    #61dafb,
+    yellow,
+    orange,
+    #da2d76
+  );
+  background-size: 800% 800%;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 8s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
