@@ -1,7 +1,7 @@
 import { Hero, HeroPad } from './hero';
+import { EmojiRefresh } from './emojiRefresh';
 
 import ctfLogo from './images/ctf_logo_white.svg';
-import wavingHandEmoji from './images/twemoji_waving_hand.svg';
 
 import './app.css';
 
@@ -13,7 +13,7 @@ export function App() {
           <h1 className="app__hello">
             <span className="rainbow rainbow_text">Hello, World</span>{' '}
             <span className="app__hello-emoji">
-              <img src={wavingHandEmoji} alt="👋" width="52px" height="52px" />
+              <EmojiRefresh />
             </span>
           </h1>
         </header>
