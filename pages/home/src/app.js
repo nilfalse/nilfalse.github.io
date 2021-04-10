@@ -1,8 +1,6 @@
 import { Hero, HeroPad } from './hero';
 import { EmojiRefresh } from './emojiRefresh';
 
-import ctfLogo from './images/ctf_logo_white.svg';
-
 import './app.css';
 
 export function App() {
@@ -33,7 +31,7 @@ export function App() {
                 Capture&nbsp;The&nbsp;Flag
               </a>
 
-              <img src={ctfLogo} alt="CTF Logo" width="180px" height="180px" />
+              <CTFLogo width="180px" height="180px" />
             </div>
 
             <div className="addon__details">
@@ -47,5 +45,16 @@ export function App() {
         </section>
       </main>
     </div>
+  );
+}
+
+export function CTFLogo({ width, height }) {
+  return (
+    <svg width={width} height={height} viewBox="0 0 640 640">
+      <path
+        d="M560 300V116H120l172 524L72 300 0 55h640v306H308l-26-61 278 1v-1z"
+        fill="#fff"
+      />
+    </svg>
   );
 }
