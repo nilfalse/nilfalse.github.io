@@ -22,7 +22,7 @@ pages/home/build :
 
 pages/addons/ctf :
 	mkdir -p $@
-	curl -H "Authorization: token $$GITHUB_TOKEN" -L https://api.github.com/repos/nilfalse/ctf/tarball | tar --strip-components 1 -xzv -C $@
+	curl -H "Authorization: token $$GITHUB_TOKEN" -L https://api.github.com/repos/nilfalse/ctf/tarball | tar --strip-components 1 -xz -C $@
 	cd $@/packages/landing && yarn --frozen-lockfile
 	cd $@/packages/landing && SKIP_PREFLIGHT_CHECK=true PUBLIC_URL=/addons/ctf yarn react-scripts build
 

@@ -22,7 +22,7 @@ jobs:
           node-version: '14.x'
 
       - name: 🔧 Build
-        run: make --jobs --output-sync
+        run: make --output-sync
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANALYTICS: ${{ secrets.ANALYTICS }}
