@@ -3,12 +3,12 @@
     "main.css": "/addons/ctf/static/css/main.c924b71c.chunk.css",
     "main.js": "/addons/ctf/static/js/main.00b3e8bb.chunk.js",
     "main.js.map": "/addons/ctf/static/js/main.00b3e8bb.chunk.js.map",
-    "runtime-main.js": "/addons/ctf/static/js/runtime-main.ffad94ad.js",
-    "runtime-main.js.map": "/addons/ctf/static/js/runtime-main.ffad94ad.js.map",
+    "runtime-main.js": "/addons/ctf/static/js/runtime-main.a3a0d9d5.js",
+    "runtime-main.js.map": "/addons/ctf/static/js/runtime-main.a3a0d9d5.js.map",
     "static/js/2.f78f43a5.chunk.js": "/addons/ctf/static/js/2.f78f43a5.chunk.js",
     "static/js/2.f78f43a5.chunk.js.map": "/addons/ctf/static/js/2.f78f43a5.chunk.js.map",
-    "static/js/3.557912a8.chunk.js": "/addons/ctf/static/js/3.557912a8.chunk.js",
-    "static/js/3.557912a8.chunk.js.map": "/addons/ctf/static/js/3.557912a8.chunk.js.map",
+    "static/js/3.2c3fb465.chunk.js": "/addons/ctf/static/js/3.2c3fb465.chunk.js",
+    "static/js/3.2c3fb465.chunk.js.map": "/addons/ctf/static/js/3.2c3fb465.chunk.js.map",
     "index.html": "/addons/ctf/index.html",
     "static/css/main.c924b71c.chunk.css.map": "/addons/ctf/static/css/main.c924b71c.chunk.css.map",
     "static/js/2.f78f43a5.chunk.js.LICENSE.txt": "/addons/ctf/static/js/2.f78f43a5.chunk.js.LICENSE.txt",
@@ -22,7 +22,7 @@
     "static/media/undraw_developer_activity_bv83.52151737.svg": "/addons/ctf/static/media/undraw_developer_activity_bv83.52151737.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ffad94ad.js",
+    "static/js/runtime-main.a3a0d9d5.js",
     "static/js/2.f78f43a5.chunk.js",
     "static/css/main.c924b71c.chunk.css",
     "static/js/main.00b3e8bb.chunk.js"
