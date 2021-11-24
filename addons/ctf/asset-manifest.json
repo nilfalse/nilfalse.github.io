@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/addons/ctf/static/css/main.0d967d1e.chunk.css",
-    "main.js": "/addons/ctf/static/js/main.48a2d9fb.chunk.js",
-    "main.js.map": "/addons/ctf/static/js/main.48a2d9fb.chunk.js.map",
-    "runtime-main.js": "/addons/ctf/static/js/runtime-main.811afe3e.js",
-    "runtime-main.js.map": "/addons/ctf/static/js/runtime-main.811afe3e.js.map",
-    "static/js/2.7b84e1b5.chunk.js": "/addons/ctf/static/js/2.7b84e1b5.chunk.js",
-    "static/js/2.7b84e1b5.chunk.js.map": "/addons/ctf/static/js/2.7b84e1b5.chunk.js.map",
-    "static/js/3.745d4b61.chunk.js": "/addons/ctf/static/js/3.745d4b61.chunk.js",
-    "static/js/3.745d4b61.chunk.js.map": "/addons/ctf/static/js/3.745d4b61.chunk.js.map",
+    "main.js": "/addons/ctf/static/js/main.81ec0a3a.chunk.js",
+    "main.js.map": "/addons/ctf/static/js/main.81ec0a3a.chunk.js.map",
+    "runtime-main.js": "/addons/ctf/static/js/runtime-main.2583491b.js",
+    "runtime-main.js.map": "/addons/ctf/static/js/runtime-main.2583491b.js.map",
+    "static/js/2.e911e3b6.chunk.js": "/addons/ctf/static/js/2.e911e3b6.chunk.js",
+    "static/js/2.e911e3b6.chunk.js.map": "/addons/ctf/static/js/2.e911e3b6.chunk.js.map",
+    "static/js/3.20cce1fb.chunk.js": "/addons/ctf/static/js/3.20cce1fb.chunk.js",
+    "static/js/3.20cce1fb.chunk.js.map": "/addons/ctf/static/js/3.20cce1fb.chunk.js.map",
     "index.html": "/addons/ctf/index.html",
     "static/css/main.0d967d1e.chunk.css.map": "/addons/ctf/static/css/main.0d967d1e.chunk.css.map",
-    "static/js/2.7b84e1b5.chunk.js.LICENSE.txt": "/addons/ctf/static/js/2.7b84e1b5.chunk.js.LICENSE.txt",
+    "static/js/2.e911e3b6.chunk.js.LICENSE.txt": "/addons/ctf/static/js/2.e911e3b6.chunk.js.LICENSE.txt",
     "static/media/amazon.139141d2.svg": "/addons/ctf/static/media/amazon.139141d2.svg",
     "static/media/cloudflare.774a35f1.svg": "/addons/ctf/static/media/cloudflare.774a35f1.svg",
     "static/media/fastly.a097674f.svg": "/addons/ctf/static/media/fastly.a097674f.svg",
@@ -22,9 +22,9 @@
     "static/media/undraw_developer_activity_bv83.52151737.svg": "/addons/ctf/static/media/undraw_developer_activity_bv83.52151737.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.811afe3e.js",
-    "static/js/2.7b84e1b5.chunk.js",
+    "static/js/runtime-main.2583491b.js",
+    "static/js/2.e911e3b6.chunk.js",
     "static/css/main.0d967d1e.chunk.css",
-    "static/js/main.48a2d9fb.chunk.js"
+    "static/js/main.81ec0a3a.chunk.js"
   ]
 }
