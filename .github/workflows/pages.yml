@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: 🔧 Build
-        run: make
+        run: yarn build
 
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
