@@ -1,0 +1,8 @@
+.button {
+  background-color: white;
+}
+
+.button > span {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

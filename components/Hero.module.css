@@ -1,0 +1,15 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+}
+
+.hero.accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  bottom: 0;
+  background-color: var(--hero-accent);
+  clip-path: ellipse(50% 20% at 50% 100%);
+}

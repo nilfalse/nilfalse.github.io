@@ -1,0 +1,9 @@
+.container {
+  max-width: 920px;
+  box-sizing: border-box;
+  padding: 24px 32px;
+}
+
+.wide {
+  max-width: 1200px;
+}

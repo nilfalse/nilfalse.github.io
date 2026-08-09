@@ -1,4 +1,4 @@
-.rainbow {
+.shining {
   background-image: linear-gradient(
     to left,
     violet,
@@ -8,15 +8,14 @@
     #da2d76
   );
   background-size: 800% 800%;
-  animation: rainbow 8s ease infinite;
-}
+  animation: shining 8s ease infinite;
 
-.rainbow_text {
+  /* text */
   background-clip: text;
   color: transparent;
 }
 
-@keyframes rainbow {
+@keyframes shining {
   0% {
     background-position: 0% 50%;
   }

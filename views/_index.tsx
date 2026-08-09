@@ -19,7 +19,7 @@ export function Index() {
       </Hero>
       <section className={`${classes['webext']} ${flexbox['center']}`}>
         <Container>
-          <Button text='Learn more'></Button>
+          <Button text="Learn more"></Button>
         </Container>
       </section>
     </>
