@@ -1,0 +1,11 @@
+.hello {
+  padding: 0 0.5rem;
+  color: var(--color-webext);
+  text-align: center;
+}
+
+.webext {
+  min-height: 30vh;
+  background-color: var(--color-webext);
+  color: #fff;
+}
