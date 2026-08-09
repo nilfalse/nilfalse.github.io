@@ -1,0 +1,28 @@
+.h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.p {
+  margin: 0.5rem;
+  margin-left: 0;
+
+  &.footnote {
+    font-size: 0.8rem;
+    color: #6d758e;
+
+    &::selection {
+      background-color: #6d758e;
+      color: #000000;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+}

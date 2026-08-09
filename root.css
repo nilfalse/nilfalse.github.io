@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Ubuntu', 'Segoe UI', 'Roboto',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-webext: #0bf;
+}
+
+html {
+  font-size: 12px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

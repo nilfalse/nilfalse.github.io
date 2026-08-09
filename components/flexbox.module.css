@@ -1,0 +1,21 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.split.spaced {
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px) {
+  .split {
+    display: flex;
+    width: 100%;
+  }
+}

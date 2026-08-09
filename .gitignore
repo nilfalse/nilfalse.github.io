@@ -1,5 +1,6 @@
-node_modules
-coverage
-build
-/pages/addons/ctf
-/www
+.env
+package-lock.json
+/node_modules/
+
+/.react-router/
+/build/

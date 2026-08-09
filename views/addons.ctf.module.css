@@ -1,0 +1,150 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--header);
+
+  transition:
+    background-color 0.2s ease-out,
+    box-shadow 0.2s ease-out;
+  z-index: 999;
+
+  &.sticky {
+    background-color: #fff;
+    box-shadow: 11px 15px 29px 0 rgba(48, 48, 48, 0.07);
+  }
+
+  .container {
+    height: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .cta {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .header {
+    .container {
+      justify-content: space-between;
+    }
+
+    .cta {
+      display: inline grid;
+    }
+  }
+}
+
+.logo {
+  font-weight: normal;
+
+  .image {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-webext);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 32px;
+  }
+
+  .text {
+    height: 12px;
+    padding-top: 5px;
+    fill: var(--color-webext);
+    stroke: var(--color-webext);
+  }
+
+  .aux {
+    color: #aaa;
+    font-size: 0.8rem;
+    text-align: right;
+  }
+}
+
+.hero {
+  .cta {
+    padding-top: 2rem;
+  }
+}
+
+.popup {
+  width: 100%;
+
+  .demo {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    max-height: 463px;
+
+    background: linear-gradient(0deg, #f3f5f7 67%, #51baf9 0);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .popup {
+    height: 498px;
+
+    background: url(../images/ctf/popup/decoration.svg) no-repeat center;
+    background-size: 412px 498px;
+  }
+}
+
+.features {
+  background-color: #fff;
+  color: #696969;
+
+  .clouds {
+    padding: 0;
+
+    li {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+    }
+    li::before {
+      content: '•';
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.promo {
+  background-color: var(--color-webext);
+  color: #fff;
+
+  ::selection {
+    background-color: #fe57a1;
+  }
+
+  .demo {
+    display: none;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 558px) {
+  .promo {
+    .demo {
+      display: inline grid;
+    }
+  }
+}
+
+.download {
+  background-color: #fff;
+  color: #696969;
+
+  .title {
+    padding-bottom: 0;
+  }
+}

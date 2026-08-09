@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &.pad {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 920px;
+
+    &.pad {
+      padding: 1.5rem 2rem;
+    }
+
+    &.wide {
+      max-width: 1200px;
+    }
+  }
+}

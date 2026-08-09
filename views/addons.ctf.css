@@ -1,0 +1,4 @@
+body {
+  --header: 88px;
+  padding-top: var(--header);
+}

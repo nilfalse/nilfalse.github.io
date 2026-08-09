@@ -1,0 +1,15 @@
+.remoji {
+  min-height: 10rem;
+  font-size: 1rem;
+  line-height: 1;
+
+  .emoji {
+    display: block;
+    font-size: 8rem;
+  }
+
+  small {
+    display: inline-block;
+    padding-top: 1rem;
+  }
+}

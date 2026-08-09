@@ -1,0 +1,53 @@
+.decoration {
+  rx: 6px; /* SVG border-radius */
+  fill: var(--button-accent);
+}
+
+.txt {
+  padding: 1rem 1.4rem;
+  border: 2px solid var(--button-accent);
+  border-radius: 6px;
+}
+
+.btn {
+  position: relative;
+  display: inline-grid;
+  align-items: center;
+  justify-items: center;
+
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+
+  color: var(--button-accent);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.spacer {
+  visibility: hidden;
+  white-space: nowrap;
+  grid-area: 1 / 1;
+}
+
+.svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 1;
+  pointer-events: none;
+}
+
+.svg-txt {
+  dominant-baseline: central;
+  text-anchor: middle;
+  fill: #000;
+}

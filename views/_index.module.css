@@ -1,0 +1,47 @@
+.hello {
+  font-size: 4rem;
+  padding: 4rem 2rem;
+  color: var(--color-webext);
+
+  .remoji {
+    padding: 1rem;
+  }
+}
+
+.webext {
+  min-height: 30vh;
+  background-color: var(--color-webext);
+  color: #fff;
+
+  .link {
+    padding: 2rem;
+    padding-bottom: 0;
+
+    .logo {
+      width: 180px;
+      fill: #fff;
+    }
+  }
+
+  .descr {
+    padding: 2rem;
+
+    .cta {
+      padding: 1rem;
+    }
+  }
+
+  ::selection {
+    background-color: #da2d76;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .webext {
+    .link {
+      .logo {
+        width: 250px;
+      }
+    }
+  }
+}
