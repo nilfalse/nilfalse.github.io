@@ -1,4 +1,4 @@
-import { Index } from '../views/_index.tsx';
+import View from '../views/_index.tsx';
 import type { Route } from './+types/_index.ts';
 
 export function meta({}: Route.MetaArgs) {
@@ -8,4 +8,4 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default Index;
+export default View;

@@ -1,5 +1,5 @@
-import { Remoji } from '../components/Remoji.tsx';
-import type { Route } from './+types/addons.ctf';
+import View from '../views/addons.ctf.tsx';
+import type { Route } from './+types/addons.ctf.ts';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -8,6 +8,4 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <Remoji />;
-}
+export default View

@@ -17,3 +17,9 @@ export function H2(props: Props) {
 
   return <h2 className={`${classes['h2']} ${className}`}>{props.children}</h2>;
 }
+
+export function P(props: Props) {
+  const { className = '' } = props;
+
+  return <p className={`${classes['p']} ${className}`}>{props.children}</p>;
+}

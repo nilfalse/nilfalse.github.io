@@ -1,8 +1,50 @@
-.button {
-  background-color: white;
+.decoration {
+  rx: 6px; /* border-radius */
+  fill: #fff;
 }
 
-.button > span {
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.txt {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 1.4rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-grid;
+  align-items: center;
+  justify-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.spacer {
+  visibility: hidden;
+  white-space: nowrap;
+  grid-area: 1 / 1;
+}
+
+.svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  grid-area: 1 / 1;
+  pointer-events: none;
+}
+
+.svg-txt {
+  dominant-baseline: central;
+  text-anchor: middle;
+  fill: #000;
 }

@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import type { Emoji } from '../data/emoji.ts';
 import { useRandom } from '../use/useRandom.ts';
 import { useStoredResource } from '../use/useStoredResource.ts';
@@ -8,7 +10,11 @@ function fetchList() {
   return import('../data/emoji.ts').then(({ list }) => list);
 }
 
-export function Remoji() {
+interface Props {
+  className?: string | undefined;
+}
+
+export function Remoji({ className }: Props) {
   const CACHE_KEY = 'remoji';
 
   const list = useStoredResource(CACHE_KEY, fetchList, []);
@@ -20,7 +26,7 @@ export function Remoji() {
   };
 
   return (
-    <div className={classes['remoji']}>
+    <div className={clsx(classes['remoji'], className)}>
       <Emoji emoji={fallback} suppressHydrationWarning />
       <script>
         {'(function(){' +
@@ -51,7 +57,7 @@ function Emoji(props: EmojiProps) {
       <span className={classes['emoji']}>
         {String.fromCodePoint(...emoji.codepoint)}
       </span>
-      <small className={classes['description']}>{emoji.description}</small>
+      <small>{emoji.description}</small>
     </div>
   );
 }
