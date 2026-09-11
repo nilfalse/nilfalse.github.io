@@ -16,5 +16,6 @@ export default defineConfig({
 
   build: {
     license: { fileName: 'license.md' },
+    sourcemap: true,
   },
 });

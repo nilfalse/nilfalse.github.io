@@ -40,7 +40,7 @@ function Header() {
       <Container center wide className={classes['container']}>
         <Logo />
         <Button
-          to="#download"
+          to={Download.href}
           primary
           accent="var(--color-webext)"
           className={classes['cta']}
@@ -145,7 +145,7 @@ function InstallAction() {
 
     case null:
       return (
-        <Button to="#download" primary accent="var(--color-webext)">
+        <Button to={Download.href} primary accent="var(--color-webext)">
           Download
         </Button>
       );
@@ -230,9 +230,11 @@ function Promo() {
   );
 }
 
+Download.id = 'download';
+Download.href = '#' + Download.id;
 function Download() {
   return (
-    <article className={classes['download']}>
+    <article className={classes['download']} id={Download.id}>
       <Container vertical center nopad>
         <Container center className={classes['title']}>
           <H2>Supported by your platform</H2>

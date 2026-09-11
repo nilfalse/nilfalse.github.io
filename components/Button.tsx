@@ -64,17 +64,31 @@ export function Button({ primary, accent, ...props }: Props) {
   );
 
   if (isAnchorProps(props)) {
-    return (
-      <ReactRouterLink
-        reloadDocument
-        {...props}
-        className={className}
-        aria-label={props.ariaLabel ?? props.children}
-        style={style}
-      >
-        {content}
-      </ReactRouterLink>
-    );
+    if (typeof props.to === 'string' && props.to.startsWith('#')) {
+      return (
+        <a
+          {...props}
+          href={props.to}
+          className={className}
+          aria-label={props.ariaLabel ?? props.children}
+          style={style}
+        >
+          {content}
+        </a>
+      );
+    } else {
+      return (
+        <ReactRouterLink
+          reloadDocument
+          {...props}
+          className={className}
+          aria-label={props.ariaLabel ?? props.children}
+          style={style}
+        >
+          {content}
+        </ReactRouterLink>
+      );
+    }
   } else {
     return (
       <button
