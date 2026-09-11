@@ -1,6 +1,7 @@
-import favicon from '../images/ctf/favicon.ico';
-import cssUrl from '../views/addons.ctf.css?url';
-import View from '../views/addons.ctf.tsx';
+import favicon from '~/images/ctf/favicon.ico';
+import cssUrl from '~/views/addons.ctf.css?url';
+import View from '~/views/addons.ctf.tsx';
+
 import type { Route } from './+types/addons.ctf.ts';
 
 const description =

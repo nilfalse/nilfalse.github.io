@@ -1,7 +1,7 @@
 import { noop } from 'lodash-es';
 import { useEffect, useEffectEvent, useSyncExternalStore } from 'react';
 
-import * as storage from '../lib/storage.ts';
+import * as storage from '~/lib/storage.ts';
 
 export function useStoredResource<T>(
   key: string,

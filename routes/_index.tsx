@@ -1,5 +1,6 @@
-import favicon from '../images/favicon.ico';
-import View from '../views/_index.tsx';
+import favicon from '~/images/favicon.ico';
+import View from '~/views/_index.tsx';
+
 import type { Route } from './+types/_index.ts';
 
 export const meta: Route.MetaFunction = () => [

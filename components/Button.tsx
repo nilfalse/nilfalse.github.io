@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ButtonHTMLAttributes, CSSProperties, JSX } from 'react';
+import type { ButtonHTMLAttributes, CSSProperties } from 'react';
 import { useId } from 'react';
 import type { LinkProps } from 'react-router';
 import { Link as ReactRouterLink } from 'react-router';

@@ -1,19 +1,20 @@
 import clsx from 'clsx';
 
-import { Button } from '../components/Button.tsx';
-import { Container } from '../components/Container.tsx';
-import { Link } from '../components/Link.tsx';
-import typography from '../components/Typography.module.css';
-import { H1, H2, P } from '../components/Typography.tsx';
-import { Hero } from '../components/Hero.tsx';
-import flexbox from '../components/flexbox.module.css';
-import LogoSVG from '../images/ctf/logo/logo.svg?react';
-import TextSVG from '../images/ctf/logo/text.svg?react';
-import Omnibox from '../images/ctf/omnibox.svg';
-import Popup from '../images/ctf/popup/popup.png';
-import DevActivity from '../images/ctf/undraw_developer_activity_bv83.svg';
-import { useScrollTop } from '../use/useScrollTop.ts';
-import { useUseragent } from '../use/useUseragent.ts';
+import { Button } from '~/components/Button.tsx';
+import { Container } from '~/components/Container.tsx';
+import { Link } from '~/components/Link.tsx';
+import typography from '~/components/Typography.module.css';
+import { H1, H2, P } from '~/components/Typography.tsx';
+import { Hero } from '~/components/Hero.tsx';
+import flexbox from '~/components/flexbox.module.css';
+import LogoSVG from '~/images/ctf/logo/logo.svg?react';
+import TextSVG from '~/images/ctf/logo/text.svg?react';
+import Omnibox from '~/images/ctf/omnibox.svg';
+import Popup from '~/images/ctf/popup/popup.png';
+import DevActivity from '~/images/ctf/undraw_developer_activity_bv83.svg';
+import { useScrollTop } from '~/use/useScrollTop.ts';
+import { useUseragent } from '~/use/useUseragent.ts';
+
 import classes from './addons.ctf.module.css';
 
 export default function () {

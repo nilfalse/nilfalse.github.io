@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { getRandomInt } from '../lib/random.ts';
+import { getRandomInt } from '~/lib/random.ts';
 
 export function useRandom<T>(list: T[]) {
   return useMemo(() => {

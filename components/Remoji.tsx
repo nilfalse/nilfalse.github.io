@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 
-import type { Emoji } from '../data/emoji.ts';
-import { useRandom } from '../use/useRandom.ts';
-import { useStoredResource } from '../use/useStoredResource.ts';
+import type { Emoji } from '~/data/emoji.ts';
+import { useRandom } from '~/use/useRandom.ts';
+import { useStoredResource } from '~/use/useStoredResource.ts';
 
 import classes from './Remoji.module.css';
 

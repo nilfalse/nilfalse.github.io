@@ -14,8 +14,7 @@
   "compilerOptions": {
     "rootDirs": [".", "./.react-router/types"],
     "paths": {
-      "~/*": ["./app/*"]
-    },
-    "resolveJsonModule": true
+      "~/*": ["./*"]
+    }
   }
 }
