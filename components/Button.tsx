@@ -79,7 +79,6 @@ export function Button({ primary, accent, ...props }: Props) {
     } else {
       return (
         <ReactRouterLink
-          reloadDocument
           {...props}
           className={className}
           aria-label={props.ariaLabel ?? props.children}

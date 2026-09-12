@@ -9,7 +9,6 @@ interface Props extends LinkProps {}
 export function Link({ children, ...props }: Props) {
   return (
     <ReactRouterLink
-      reloadDocument
       {...props}
       className={clsx(classes['link'], props.className)}
     >

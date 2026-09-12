@@ -2,8 +2,8 @@ import { Outlet } from 'react-router';
 
 import './root.css';
 
-export * from './Layout.tsx';
+export { Layout } from './Layout.tsx';
 
-export * from './ErrorBoundary.tsx';
+export { ErrorBoundary } from './ErrorBoundary.tsx';
 
 export default Outlet;
