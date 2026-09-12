@@ -22,6 +22,7 @@
     "@react-router/dev": "^8",
     "@react-router/fs-routes": "^8",
     "@svgr/plugin-svgo": "^8.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@tsconfig/strictest": "^2.0.8",
     "@tsconfig/vite-react": "^8.1.1",
     "@types/lodash-es": "^4.17.12",
@@ -43,6 +44,18 @@
     }
   },
   "prettier": {
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports"
+    ],
+    "importOrder": [
+      "<BUILTIN_MODULES>",
+      "<THIRD_PARTY_MODULES>",
+      "^~(?!.*\\.css(?:\\?.*)?$)(.+)$",
+      "^(?:\\.{1,2}/)(?!\\+)(?!.*\\.css(?:\\?.*)?$).*",
+      "^\\./\\+.*$",
+      "\\.css(?:\\?.*)?$"
+    ],
+    "importOrderSeparation": true,
     "singleQuote": true
   }
 }

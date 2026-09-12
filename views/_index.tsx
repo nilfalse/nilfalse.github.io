@@ -1,14 +1,14 @@
 import { Button } from '~/components/Button.tsx';
 import { Container } from '~/components/Container.tsx';
-import { Link } from '~/components/Link.tsx';
-import typography from '~/components/Typography.module.css';
-import { H1, H2, P } from '~/components/Typography.tsx';
 import { Hero } from '~/components/Hero.tsx';
+import { Link } from '~/components/Link.tsx';
 import { Remoji } from '~/components/Remoji.tsx';
-import flexbox from '~/components/flexbox.module.css';
-import fx from '~/components/fx.module.css';
+import { H1, H2, P } from '~/components/Typography.tsx';
 import CTFLogo from '~/images/ctf/logo/logo.svg?react';
 
+import typography from '../components/Typography.module.css';
+import flexbox from '../components/flexbox.module.css';
+import fx from '../components/fx.module.css';
 import classes from './_index.module.css';
 
 export default function () {

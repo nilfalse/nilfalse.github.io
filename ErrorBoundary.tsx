@@ -1,11 +1,12 @@
 import { isRouteErrorResponse } from 'react-router';
 
 import { Container } from './components/Container.tsx';
-import { H1 } from './components/Typography.tsx';
 import { Hero } from './components/Hero.tsx';
-import fx from './components/fx.module.css';
+import { H1 } from './components/Typography.tsx';
 
 import type { Route } from './+types/root.ts';
+
+import fx from './components/fx.module.css';
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   console.error(error);
